@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Work with arreys</title>
+</head>
+<body>
+    <head>
+        <div class="head">
+            <div id="Menu"><b>Відбір</b></div>
+            <div class="list">
+                Сортування: 
+                <select name="user_profile_color_1" id="Sort">
+                    <option value="no">Без сортування</option>  
+                    <option value="cheaperFirst">Дешевше</option>
+                    <option value="expensiveFirst">Дорожче</option>                                      
+                </select>
+            </div>           
+        </div>        
+    </head>
+    <main>
+        <div class="selection" id="Selection">
+            <fieldset>
+                <legend>Кольори:</legend>  
+                <p>
+                    <input type="checkbox" id="checkBoxGreen">
+                    <label for="click" class="text"> Зелений </label>   
+                </p>              
+                <p>
+                    <input type="checkbox" id="checkBoxBlue">
+                    <label for="click" class="text"> Синій </label>
+                </p>
+                <p>
+                    <input type="checkbox" id="checkBoxRed">
+                    <label for="click" class="text"> Червоний </label>  
+                </p>           
+            </fieldset>
+            <fieldset>
+                <legend>Ціна:</legend>  
+                <p>
+                    <label for="minCost" class="text"> Від </label>
+                    <input name="minCost" size="3" min="0" id="minCost">
+                    <label for="maxCost" class="text"> до </label>
+                    <input name="maxCost" size="3" min="0" id="maxCost">                  
+                </p>           
+            </fieldset>
+            <p>
+                <input type="checkbox" id="checkBoxAction">
+                <label for="checkBoxAction" class="text"> Акція </label>  
+            </p>   
+        </div>
+        <div class="cards" id="cards">
+        </div>
+    </main>
+    <script src="main.js" defer></script>
+</body>
+</html>
